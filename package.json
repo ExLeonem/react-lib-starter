@@ -65,7 +65,8 @@
     "style-loader": "^1.0.0",
     "url-loader": "^4.0.0",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0"
+    "webpack-cli": "^3.2.0",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "peerDependencies": {
     "react": "^16.8.6",
