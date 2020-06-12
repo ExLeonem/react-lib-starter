@@ -29,12 +29,12 @@
   },
   "homepage": "https://github.com/ExLeonem/react-lib-starter.git#readme",
   "jest": {
-      "moduleNameMapper": {
-          "\\.(css|scss)$": "/src/styles"
-      },
-      "modulePathIgnorePatterns": [
-          ".docz"
-      ]
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "modulePathIgnorePatterns": [
+      ".docz"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -50,10 +50,12 @@
     "@testing-library/react": "^10.2.1",
     "@tulipjs/eslint-config": "^1.1.1",
     "babel-loader": "^8.0.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "core-js": "^3.6.5",
     "css-loader": "^3.0.0",
     "docz": "^2.3.1",
     "gatsby-plugin-sass": "^2.3.4",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "node-sass": "^4.9.3",
     "react": "^16.8.6",
