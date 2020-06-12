@@ -1,0 +1,76 @@
+
+@import "./param.scss";
+
+
+// Defines optics of on interaction :hover and :focus
+@mixin interaction($background-color, $font-color: white) {
+
+    &:hover {
+        cursor: pointer;
+        color: $font-color;
+        background-color: $background-color;
+        @include iconColoring(white);
+    }
+
+    &:focus {
+        color: $font-color;
+        background-color: $background-color;
+        @include iconColoring(white);
+    }
+}
+
+
+// Create different button styles for different class names
+@mixin buttonFlavor($class-name, $main-color) {
+
+    // Style for a filled button
+    &.#{$class-name}:not(.outline) {
+        background-color: $main-color;
+        color: white;
+
+        @include interaction(darken($main-color, 20));
+        @include iconColoring(white);
+    }
+
+    // Outlined button
+    &.#{$class-name}.outline {
+        background-color: white;
+        border: 2px solid $main-color;
+        color: $main-color;
+
+        @include interaction($main-color, white);
+        @include iconColoring($arsenic);
+    }
+}
+
+
+@mixin iconColoring($icon-color) {
+    svg path, svg{
+        fill: $icon-color;
+    }
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include buttonFlavor("primary", $ultramarine-blue);
+    @include buttonFlavor("secondary", $arsenic);
+    @include buttonFlavor("warning", red);
+    @include buttonFlavor("success", green);
+
+    &.circle {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+    }
+
+    &:not(.circle) {
+        width: 200px;
+        height: 45px;
+    }
+    
+    user-select: none;
+}

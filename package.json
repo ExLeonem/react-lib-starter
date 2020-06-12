@@ -1,0 +1,61 @@
+{
+  "name": "react-lib-starter",
+  "version": "1.0.0",
+  "description": "A react library starter template.",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "storybook": "start-storybook -p 9001",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwlsn/rinse-react.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "starter",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Maksim Sandybekov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExLeonem/react-lib-starter/issues"
+  },
+  "homepage": "https://github.com/ExLeonem/react-lib-starter.git#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@tulipjs/eslint-config": "^1.1.1",
+    "babel-loader": "^8.0.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.0.0",
+    "docz": "^2.3.1",
+    "gatsby-plugin-sass": "^2.3.4",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
